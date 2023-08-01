@@ -7,6 +7,16 @@
     "theme_color": "#0175C2",
     "description": "A new Flutter project.",
     "orientation": "portrait-primary",
+    "version": "0.4.0",
+    "manifest_version": 3,
+    "content_security_policy": {
+        "content_security_policy": {
+            "extension_pages": "script-src 'self' ; object-src 'self'"
+        }
+    },
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
     "prefer_related_applications": false,
     "icons": [
         {
