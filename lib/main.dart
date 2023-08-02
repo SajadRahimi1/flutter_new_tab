@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_new_tab/views/home_screen.dart';
 import 'package:get/route_manager.dart';
 
 void main() {
@@ -11,11 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      theme: ThemeData(
-        fontFamily: 'Sans'
-      ),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'Sans'),
+      home: const HomeScreen(),
     );
   }
 }
-
-
